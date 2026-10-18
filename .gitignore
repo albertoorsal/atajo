@@ -1,0 +1,92 @@
+# =========================================================
+# Secrets & environment files
+# =========================================================
+.env
+.env.*
+*.env
+!.env.example
+!**/.env.example
+
+# Local config overrides that may hold credentials
+*.local
+*.local.*
+local_settings.py
+secrets.*
+secret.*
+credentials.*
+*credentials*.json
+service-account*.json
+client_secret*.json
+
+# =========================================================
+# Keys, certificates & tokens
+# =========================================================
+*.pem
+*.key
+*.crt
+*.cer
+*.der
+*.p12
+*.pfx
+*.jks
+*.keystore
+*.asc
+*.gpg
+id_rsa*
+id_ed25519*
+id_ecdsa*
+*.ppk
+.htpasswd
+.netrc
+.npmrc
+.pypirc
+*.token
+
+# Cloud provider credentials
+.aws/
+.azure/
+.gcloud/
+*.tfvars
+*.tfstate
+*.tfstate.*
+
+# Database dumps (may contain user data)
+*.sql
+*.sqlite
+*.sqlite3
+*.db
+*.dump
+*.bson
+dump/
+
+# =========================================================
+# Python
+# =========================================================
+__pycache__/
+*.py[cod]
+build/
+dist/
+wheels/
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# =========================================================
+# Logs (can leak tokens/PII)
+# =========================================================
+*.log
+logs/
+
+# =========================================================
+# Editors & OS
+# =========================================================
+.vscode/*
+!.vscode/settings.json
+.idea/
+.DS_Store
+Thumbs.db
